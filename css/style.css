@@ -1,9 +1,12 @@
 @font-face {
-    font-family: "Avenir Arabic";
-    src: url(../font/alfont_com_AlFont_com_AvenirArabic-Medium.otf);
-  }
+  font-family: "Avenir Arabic";
+  src: url(../font/alfont_com_AlFont_com_AvenirArabic-Medium.otf);
+}
 body{
-    font-family: "Avenir Arabic";
+  font-family: "Avenir Arabic";
+  overflow-x: hidden; /* Prevent horizontal scroll */
+
+  
 }
 header {
   backdrop-filter: blur(40px);
@@ -14,81 +17,77 @@ header {
   right: 0;
   z-index: 1000;
   width: 100%; 
-
 }
+
+
 
 .navbar {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem; 
-  }
-  
-  .navbar-brand {
-    font-size: 2rem; 
-  }
-  .dropdown-menu {
-    font-size: 1.2rem; 
-  }
-  .first-section{
-    background-image: url("/img/f20fe03f1a34f28d4ec14a5c35a3391e.jpg");
-    min-height:600px ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; 
+}
+
+.navbar-brand {
+  font-size: 2rem; 
+}
+.dropdown-menu {
+  font-size: 1.2rem; 
+}
+.first-section{
+  background-image: url("/img/f20fe03f1a34f28d4ec14a5c35a3391e.jpg");
+  min-height:600px ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 .first-section .overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(119.36deg, rgba(26, 68, 136, 0.95) 26.98%, rgba(7, 17, 34, 0.76) 92.51%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(119.36deg, rgba(26, 68, 136, 0.95) 26.98%, rgba(7, 17, 34, 0.76) 92.51%),
+  linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 .first-text-overlay {
-    color: #F9485C;
-    font-size: 2rem;
-  }
+  color: #F9485C;
+  font-size: 2rem;
+}
 .seconed-text-overlay{
-
-    font-family: Avenir Arabic;
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 130%;
-    color: white;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 130%;
+  color: white;
 }
 .third-text-overlay{
-    font-family: Avenir Arabic;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 100%;
-    text-transform: capitalize;
-    color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: white;
 }
 .sar-part{
-    font-family: Avenir Arabic;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 100%;
-    text-transform: capitalize;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: capitalize;
 }
 .dropdown-css{
   padding: 25px;
   border-radius: 10px;
 }
 .button-download-app {
-    gap: 10px;
-    border-radius: 24px;
-    padding: 10px;
-    background-color: #F9485C;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    transition: background-color 1s ease; 
+  gap: 10px;
+  border-radius: 24px;
+  padding: 10px;
+  background-color: #F9485C;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: background-color 1s ease; 
 }
-
 .button-download-app:hover {
-    background-color: #12305F;
+  background-color: #12305F;
 }
 .about-img-wrapper {
   position: relative;
@@ -101,7 +100,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .about-img {
   background-position: center;
   background-repeat: no-repeat;
@@ -109,18 +107,15 @@ header {
   width: 80%; 
   height: 100%;
 }
-
 .image-btn {
   margin-left: 80%; 
 }
-
 .info-about-mora {
   color: #102953;
   font-weight: 900;
   font-size: 38px;
   line-height: 150%;
 }
-
 .text-decoration {
   font-weight: 500;
   font-size: 18px;
@@ -130,7 +125,6 @@ header {
   color: white;
   text-decoration: none; 
 }
-
 .footer a:hover {
   color: #ccc; 
 }
@@ -138,7 +132,6 @@ header {
   font-weight: 300;
   line-height: 130%;
   vertical-align: middle;
-  
 }
 .header-of-footer{
   color: #FFFFFF;
@@ -147,10 +140,6 @@ header {
 .under-header{
   color: #EEEEEE;
   text-decoration: none;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  vertical-align: middle;
 }
 .all-right-reserved{
   display: flex;
@@ -174,4 +163,224 @@ header {
   height: 100px;             
   background-color: red;    
   border-radius: 5px;
+}
+.padding-footer{
+  padding:0px ;
+}
+.padding-elements-footer{
+  padding-top: 10px;
+}
+.purchasing{
+  background-image: url("/img/image\ \(1\).png");
+  min-height:600px ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.purchasing .overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(119.36deg, rgba(26, 68, 136, 0.95) 26.98%, rgba(7, 17, 34, 0.76) 92.51%),
+  linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+.purchasing-loan-header{
+  padding-top: 100px;
+  color: white;
+  font-size: 64px;
+  line-height: 129%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.purchasing-loan-header br{
+  font-weight: 500;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.quickly{
+  color: white;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.Who-Can-Apply{
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #102953;
+}
+.no-border{
+  border: none;
+}
+.card-body img{
+  min-height:440px ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header-below-phone{
+font-size: 20px;
+font-weight: bold;
+text-transform: capitalize;
+
+}
+.zoom-on-hover {
+  transition: transform 0.3s ease-in-out; 
+  width: 100%; 
+  max-width: 200px; 
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.1); 
+}
+
+.nationality{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+#date{
+  width: 100%;
+  min-height: 63px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  color: #909090;
+}
+.finance-p{
+font-size: 20px;
+line-height: 33px;
+vertical-align: middle;
+text-transform: capitalize;
+color: #1A4488;
+margin: 20px;
+font-weight: bold;
+}
+.sar{
+font-weight: 900;
+font-size: 48px;
+line-height: 51px;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color: #F9485C;
+}
+.money{
+font-weight: 900;
+font-size: 48px;
+line-height: 51px;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+
+}
+.financing--amount{
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+}
+.below-financing-amount{
+  font-family: Avenir Arabic;
+font-weight: 900;
+font-size: 18px;
+line-height: 100%;
+}
+.btn-calculate{
+  width: 100%;
+min-height: 56;
+border-radius: 24px;
+padding: 10px;
+gap: 10px;
+border: 1px solid #F9485C;
+color: #F9485C;
+background-color: transparent;
+transition: 1s ease;
+}
+.btn-calculate:hover{
+  background-color: #0A1C38;
+  color: white;
+  border: transparent;
+}
+.btn-reset{
+  width: 80%;
+border-radius: 24px;
+padding: 10px;
+background-color: transparent;
+border: 1px solid transparent;
+transition: 1s ease;
+}
+.btn-reset:hover{
+  background-color: #0A1C38;
+  color: white;
+}
+.height{
+  height: 200px;
+}
+.download-app{
+font-weight: bold;
+font-size: 35px;
+vertical-align: middle;
+text-transform: capitalize;
+}
+.img-iphone-15{
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.apply-now{
+  width: 710;
+height: 56;
+border-radius: 24px;
+padding: 10px;
+gap: 10px;
+}
+.btn-apply-now {
+  background-color: #F9485C;
+  color: white;
+  text-decoration: none;
+  border-radius: 24px; 
+  width: 100%;  
+  min-height: 56px;  
+  padding: 10px;
+  display: inline-block; 
+  text-align: center; 
+  line-height: 36px;  
+  margin-top: 130px;
+  transition: 1S ease;
+}
+.btn-apply-now:hover{
+  background-color: #0A1C38;
+
+}
+.Who-Can-Apply{
+  margin-top: 10%;
+}
+.Morafinance_text{
+  font-family: Avenir Arabic;
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+text-transform: capitalize;
+color: white;
+}
+
+.how_can_i_help_you{
+  font-family: Avenir Arabic;
+font-weight: 500;
+font-size: 40px;
+line-height: 129%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+
 }
