@@ -1,3 +1,16 @@
+body {
+    background-color: #F4F7FB !important;
+}  
 .footer-link{
     text-decoration: none;
+}
+.fffff{
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    bottom: 50px;
+}
+.text-overlay{
+    margin-bottom: 60px;
 }

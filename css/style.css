@@ -54,10 +54,13 @@ header {
   font-size: 2rem;
 }
 .seconed-text-overlay{
-  font-weight: 900;
-  font-size: 64px;
-  line-height: 130%;
+  margin-top: 100px;
+  text-transform: capitalize;
   color: white;
+}
+.fourth-text-overlay{
+  color: white;
+  
 }
 .third-text-overlay{
   font-weight: 500;
@@ -348,20 +351,41 @@ gap: 10px;
   background-color: #F9485C;
   color: white;
   text-decoration: none;
-  border-radius: 24px; 
-  width: 100%;  
-  min-height: 56px;  
+  border-radius: 24px;
+  width: 100%;
+  min-height: 56px;
   padding: 10px;
-  display: inline-block; 
-  text-align: center; 
-  line-height: 36px;  
+  display: inline-block;
+  text-align: center;
+  line-height: 36px;
   margin-top: 130px;
-  transition: 1S ease;
+  position: relative; 
+  overflow: hidden;   
+  transition: background-color 0.1s ease;
+  z-index: 1; 
 }
-.btn-apply-now:hover{
-  background-color: #0A1C38;
 
+.btn-apply-now::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; 
+  height: 100%; 
+  background-color: #0A1C38; 
+  transition: width 0.5s ease; 
+  z-index: -1; 
 }
+
+.btn-apply-now:hover::before {
+  width: 100%; 
+}
+
+.btn-apply-now:hover {
+  color: white; 
+}
+
+
 .Who-Can-Apply{
   margin-top: 10%;
 }

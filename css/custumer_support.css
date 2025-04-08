@@ -1,0 +1,92 @@
+body{
+    background-color: #F4F7FB !important ; ;
+}
+.color-white{
+    color: white;
+}
+.color-blue{
+    color: #102953;
+}
+
+.cc{
+    background-image: url(../img/Footer\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 600px;
+}
+.input{
+    background-color: #CCCCCC;
+    border-radius: 20px;
+    width: 100%;
+}
+.contact-us {
+    position: relative;
+    left: 55%;
+    bottom: 333px;
+    width: 300px; 
+    background-color: white;
+    border-radius: 5%;
+    padding: 2%;
+}
+
+.Report-Misconduct{
+    position: relative;
+    top: -400px;
+    left: 50%;
+    padding: 2%;
+}
+
+@media (max-width: 768px) {
+.Report-Misconduct{
+        position: static;  /* bt-remove relative in smaller screens */
+    }
+}
+h1 {
+    font-size: 2.5rem;
+    color: #102953;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 80%; 
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+.fff{
+    position: relative;
+    
+}
+
+.buttons  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: #595959;
+    background-color: #f8f8f8;
+    border: 1px solid #CCCCCC;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #102953;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.footer-link{
+    text-decoration: none;
+}

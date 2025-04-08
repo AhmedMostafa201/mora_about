@@ -1,0 +1,94 @@
+body {
+    background-color: #F4F7FB !important;
+    color: #102953 !important;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.form-row {
+    display: flex; 
+    gap: 20px; 
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+}
+
+.form-group label {
+    color: #102953;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #CCCCCC;
+    font-size: 1rem;
+    background-color: #f4f7fb;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; 
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #102953;
+    box-shadow: 0 0 5px #102953;
+}
+
+
+
+.send-btn {
+    background-color: #F9485C;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    text-align: center;
+}
+
+.send-btn:hover {
+    background-color: #102953;
+}
+
+.Report-Misconduct{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+footer{
+    margin-top: 50px;
+}
+.btn-nearest-branch{
+    color: #102953;
+    border: 1px solid #102953;
+    padding: 10px;
+    border-radius: 20px;
+}
+.btn-nearest-branch:hover{
+    background-color: #102953;
+    color: white;
+}
