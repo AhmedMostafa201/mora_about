@@ -16,3 +16,11 @@ body{
     color: white;
     padding-top: 25%;
 }
+#financingValue, #tenureValue, .list-group, .btn-apply-now {
+    margin-bottom: 0 ; 
+    padding-bottom: 0 ; 
+}
+
+.btn-apply-now {
+    margin-top: 10px; 
+}

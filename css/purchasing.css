@@ -3,7 +3,16 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    color: #102953 !important;
 }
 .footer-link{
     text-decoration: none;
+}
+#financingValue, #tenureValue, .list-group, .btn-apply-now {
+    margin-bottom: 0 ; 
+    padding-bottom: 0 ; 
+}
+
+.btn-apply-now {
+    margin-top: 10px; 
 }

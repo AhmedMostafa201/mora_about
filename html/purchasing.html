@@ -70,8 +70,8 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="text-overlay d-flex justify-content-center align-items-start h-100 z-index-9 position-relative flex-column">
-                        <div class="purchasing-loan-header">purchasing loan up to <br> 25,000 SAR</div>
-                        <div><span class="first-text-overlay">Pay in installments </span> <span class="quickly">quickly and easily with <br> our partners</span></div>
+                        <div class="purchasing-loan-header"><h1>purchasing loan up to <br> 25,000 SAR</h1></div>
+                        <div><span class="first-text-overlay"><h4>Pay in installments </span> <span class="quickly">quickly and easily with <br> our partners</h4></span></div>
                         <div class="third-text-overlay py-5">
                             You can purchase products in digital installments through Mora's partners <br>up to 25,000 and tenure up to 24 months
                         </div>
@@ -82,8 +82,8 @@
         </section>
         <!-- end of the banner  -->
     
-        <div class="Who-Can-Apply text-align-center justify-content-center d-flex py-4">Who Can Apply?</div>
-<section>
+        <div style="margin-top: 3%;" class="Who-Can-Apply text-align-center justify-content-center d-flex "><h1><b>Who Can Apply?</b></h1></div>
+        <section>
         <div class="container d-flex justify-content-center text-align-center">
             <div class="row">
                 <div class="col-12 col-md-6  ">
@@ -111,7 +111,7 @@
         <!-- end -->
 <section>
         <div class="container">
-            <div class="Who-Can-Apply text-align-center justify-content-center d-flex py-4">How To Apply?</div>
+            <div class="Who-Can-Apply text-align-center justify-content-center d-flex py-4"><h1>How To Apply?</h1></div>
             <div class="row">
                 <!-- First column with text below image -->
                 <div class="col-4 iPhone-1 d-flex justify-content-center align-items-center flex-column">
@@ -140,35 +140,47 @@
             <div class="container my-5">
                 <div class="row d-flex justify-content-center">
                     <!-- Left Side -->
-                    <div class="col-12 col-md-5 col-lg-5 p-5 bg-white rounded shadow">
-                        <h4>Personal Finance Calculator</h4>
-                        <p class="text-muted">This Calculator is intended for use as a guide only. Results calculated do not constitute an offer and have no legal effect on any contracts signed between you and Tasheel Finance.</p>
-            
+                    <div style="border-radius: 10px;" class="col-12 col-md-5 col-lg-5 p-3 bg-white rounded shadow">
+                        <h4 class="mb-3">Personal Finance Calculator</h4>
+                        <p class="text-muted mb-4">This Calculator is intended for use as a guide only. Results calculated do not constitute an offer and have no legal effect on any contracts signed between you and Tasheel Finance.</p>
+        
+                        <!-- Nationality Selection -->
                         <div class="mb-3">
-                            <label class="form-label">Nationality</label><br>
+                            <label class="form-label"><b> Nationality</b></label><br>
                             <input type="radio" name="nationality" id="saudi" class="radio"> Saudi Arabia
                             <input type="radio" name="nationality" id="expat" class="radio ms-3"> Expat
                         </div>
                         
+                        <!-- Date of Birth -->
                         <div class="mb-3">
                             <label class="form-label">Date of Birth</label>
                             <input type="date" class="form-control" id="date">
                         </div>
-            
+        
+                        <!-- Financing Amount & Tenure -->
                         <div class="row">
                             <div class="col mb-3">
                                 <label class="form-label">Financing Amount</label>
-                                <div id="financingValue">18,000 SAR</div>
+                                <p>18,000 SAR</p>
                                 <input type="range" class="form-range" id="financingAmount">
+                                <div style="justify-content: space-between; color: #909090;" class="d-flex">
+                                    <p>Min: 6 Months</p>
+                                    <p>Max: 48 Months</p>
+                                </div>
                             </div>
-            
+        
                             <div class="col mb-3">
                                 <label class="form-label">Tenure</label>
-                                <div id="tenureValue">36 Months</div>
+                                <p >36 Months</p>
                                 <input type="range" class="form-range" id="tenure">
+                                <div style="justify-content: space-between; color: #909090;" class="d-flex">
+                                    <p>Min: 7,000</p>
+                                    <p>Max: 20,000</p>
+                                </div>
                             </div>
                         </div>
-            
+        
+                        <!-- Reset and Calculate Buttons -->
                         <div class="row">
                             <div class="col-6">
                                 <button class="btn-reset w-100">Reset</button>
@@ -178,33 +190,40 @@
                             </div>
                         </div>
                     </div>
-            
+        
                     <!-- Right Side (Results) -->
-                    <div class="col-12 col-md-5 col-lg-5 p-5 bg-white rounded shadow ms-md-3 mt-3  mt-lg-0 p-5 "style="">
-                        <h4 class="financing--amount">Your Finance Amount</h4>
-                        <ul class="list-group mb-3">
-                            <li class="d-flex justify-content-start">
-                                <img style="height: fit-content;" src="/img/Frame 1321315914.png" alt="">
-                                <p>Total Amount Payable <br> <span>37,800 SAR</span></p>
-                            </li>
-                            <li class="d-flex justify-content-start">
-                                <img style="height: fit-content;" src="/img/Frame 1321315914 (1).png" alt="">
-                                <p>Monthly Installment <br> <span>3,150 SAR</span></p>
-                            </li>
-                            <li class="d-flex justify-content-start">
-                                <img style="height: fit-content;" src="/img/Frame 1321315914 (2).png" alt="">
-                                <p>VAT <br> <span>48.05 SAR</span></p>
-                            </li>
-                            <li class="d-flex justify-content-start">
-                                <img style="height: fit-content;" src="/img/Frame 1321315914 (3).png" alt="">
-                                <p>APR % <br> <span>39.94%</span></p>
-                            </li>
-                        </ul>
-                        <a href="#" class="btn-apply-now w-100">Apply Now</a>
-                    </div>
+                    <div style="border-radius: 10px;" class="col-12 col-md-5 col-lg-5 p-3 bg-white ms-md-3 mt-3 mt-lg-0">
+                        <p class="">Your Finance Amount</p>
+                        <h1>32,033.90 <span style="color: #F9485C;">SAR</span></h1>
+        
+                        <!-- Results List -->
+                        <div style="background-color: #F4F7FB;">
+                            <ul class="list-group mb-3">
+                                <li class="d-flex justify-content-start pt-4 pb-3">
+                                    <img style=" width: auto;" src="/img/Frame 1321315914.png" alt="Total Amount Payable">
+                                    <p class="ms-3" ><strong style="color: #1A4488;">Total Amount Payable</strong><br><span>37,800 SAR</span></p>
+                                </li>
+                                <li class="d-flex justify-content-start py-3">
+                                    <img style=" width: auto;" src="/img/Frame 1321315914 (1).png" alt="Monthly Installment">
+                                    <p class="ms-3"> <strong style="color: #1A4488;">Monthly Installment </strong><br><span>3,150 SAR</span></p>
+                                </li>
+                                <li class="d-flex justify-content-start py-3">
+                                    <img style="width: auto;" src="/img/Frame 1321315914 (2).png" alt="VAT">
+                                    <p class="ms-3"><strong style="color: #1A4488;"> VAT </strong><br><span>48.05 SAR</span></p>
+                                </li>
+                                <li class="d-flex justify-content-start ">
+                                    <img style=" width: auto;" src="/img/Frame 1321315914 (3).png" alt="APR">
+                                    <p class="ms-3"><strong> APR % </strong><br><span>39.94%</span></p>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <!-- Apply Now Button -->
+                        <a href="#" class="btn-apply-now w-100">Apply Now</a>                    </div>
                 </div>
             </div>
-            
+        </section>
+        
         <!-- end -->
         <div class="height"></div>
         <!-- end -->

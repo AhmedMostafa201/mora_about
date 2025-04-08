@@ -4,9 +4,7 @@
 }
 body{
   font-family: "Avenir Arabic";
-  overflow-x: hidden; /* Prevent horizontal scroll */
-
-  
+  overflow-x: hidden; 
 }
 header {
   backdrop-filter: blur(40px);
@@ -18,7 +16,6 @@ header {
   z-index: 1000;
   width: 100%; 
 }
-
 
 
 .navbar {
@@ -210,8 +207,7 @@ header {
   text-transform: capitalize;
 }
 .Who-Can-Apply{
-  font-weight: 900;
-  font-size: 48px;
+  font-weight: bold;
   text-align: center;
   vertical-align: middle;
   text-transform: capitalize;
