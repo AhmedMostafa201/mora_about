@@ -1,26 +1,92 @@
-body{
-    background-color: #F4F7FB !important ; ;
+body {
+    background-color: #F4F7FB !important;
 }
-.cards{
+
+.cards {
     background-color: white;
     padding: 20px;
     border-radius: 10%;
 }
-.footer-link{
+
+.footer-link {
     text-decoration: none;
 }
-.people-trust-our-app{
+
+.people-trust-our-app {
     margin-bottom: 26%;
 }
-.banner-text{
+
+.banner-text {
     color: white;
     padding-top: 25%;
 }
+
 #financingValue, #tenureValue, .list-group, .btn-apply-now {
-    margin-bottom: 0 ; 
-    padding-bottom: 0 ; 
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .btn-apply-now {
-    margin-top: 10px; 
+    margin-top: 10px;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden; /* Ensures content stays within the card bounds */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth card hover effect */
+}
+
+/* Title styling - always visible */
+.card .overlay-text h3 {
+    position: absolute;
+    bottom: 10px; /* Keep title always at the bottom */
+    left: 10px;
+    color: white;
+    z-index: 2; /* Make sure the title stays on top */
+    transition: bottom 0.5s ease 0.5s; /* Move the title up with 0.5s duration and 0.5s delay */
+}
+
+/* Initially hide the paragraph and position it below the card */
+.card .overlay-text p {
+    position: relative;
+    bottom: -130px; /* Initially, the paragraph is out of view */
+    left: 10px;
+    color: white;
+    z-index: 1;
+    transition: bottom 0.5s ease 0.5s; /* 0.5s duration, 0.5s delay */
+}
+
+/* Initially position the button below the card (similar to paragraph) */
+.card .overlay-text .card-btn {
+    position: relative;
+    bottom: -70px; /* Initially, the button is slightly below the visible area */
+    left: 10px;
+    background-color: #FD4A5C;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: bottom 0.5s ease 0.5s; /* Smooth transition for button */
+}
+
+/* Hover effect: Move both the title, paragraph, and button up */
+.card:hover .overlay-text h3 {
+    bottom: 150px; /* Move the title up */
+}
+
+.card:hover .overlay-text p {
+    bottom: 40px; /* Move the paragraph up into view */
+}
+
+.card:hover .overlay-text .card-btn {
+    bottom: 40px; /* Move the button up into view */
+}
+
+/* Hover effect: Optional card scaling and shadow */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+}
+.card-btn{
+    background-color: #41649C;
 }
